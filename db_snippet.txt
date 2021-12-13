@@ -1,0 +1,14 @@
+db.create_all()
+
+User.query.filter_by(field_name='Value').first()
+
+Upload.query.filter_by(path='Value').first()
+
+
+# delete
+User.query.filter_by(id=123).delete()
+User.query.filter(User.id == 123).delete()
+
+
+## defining template
+https://stackoverflow.com/questions/4830535/how-do-i-format-a-date-in-jinja2
